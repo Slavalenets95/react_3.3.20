@@ -1,0 +1,17 @@
+.sort-list__item{
+    border: 1px solid #DFE5EC;
+    font-size: 12px;
+    color: #4A4A4A;
+    border-radius: 5px;
+}
+.sort-list__btn{
+    padding: 15px 57px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sort-list__item--selected{
+    background: #2196F3;
+    color: #FFF;
+    
+}

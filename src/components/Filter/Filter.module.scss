@@ -1,0 +1,32 @@
+.check{
+    display: flex;
+    align-items: center;
+}
+.check:hover{
+    cursor: pointer;
+    background-color: #f1fcff;
+}
+.check__input{
+    display: none;
+}
+
+.filters__group-label{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.check__input + .check::before {
+    content: '';
+    background-image: url('./check-noactive.svg');
+    background-size: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+    margin-right: 5px;
+}
+
+.check__input:checked + .check::before {
+    background-image: url('./check-active.svg');
+    background-size: 20px;
+}

@@ -1,0 +1,19 @@
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #F3F7FA;
+}
+.main{
+  max-width: 774px;
+  margin: 0 auto;
+  display: flex;
+}
+.main__filters{
+  max-width: 232px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.main__ticket{
+  margin-left: 20px;
+  position: relative;
+}

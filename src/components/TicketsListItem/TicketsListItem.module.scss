@@ -1,0 +1,47 @@
+.ticket__table{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.ticket__table{
+    margin-top: 20px;
+}
+.ticket-table__header-row{
+    display: flex;
+    align-items: center;
+}
+.ticket-table__price{
+    flex: 1 0 67%;
+}
+.ticket-table__header-logo{
+    flex: 1 0 33.3%;
+}
+.ticket-table__header-row{
+    padding: 20px 20px 26px 20px;
+}
+.ticket-table__body-row{
+    display: flex;
+    padding: 0 20px 10px 20px;
+}
+.ticket-table__body-title{
+    display: block;
+}
+.ticket-table__body-data{
+    flex: 1 0 33.3%;
+}
+.ticket-table__body-title{
+    font-size: 12px;
+    color: #A0B0B9;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-weight: 600;
+}
+.ticket-table__body-row:last-child{
+    padding-bottom: 20px;
+}
+.ticket-table__price{
+    font-size: 24px;
+    color: #2196F3;
+    font-weight: 600;
+}
