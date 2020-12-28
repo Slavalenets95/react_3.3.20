@@ -1,3 +1,5 @@
+import { ALL_TICKETS_LOADING, ALL_TICKETS_LOADED, GET_TICKETS_DATA } from '../actions/tickets'
+
 const ticketsState = {
   ticketsData: [],
   loading: true,
@@ -65,11 +67,11 @@ const sorting = (data, sort) => {
 
 const tickets = (state = ticketsState, action) => {
   switch (action.type) {
-    case 'ALL_TICKETS_LOADING':
+    case ALL_TICKETS_LOADING:
       return allTicketsLoading(state, action.ticketsData);
-    case 'ALL_TICKETS_LOADED':
+    case ALL_TICKETS_LOADED:
       return allTicketsLoaded(state);
-    case 'GET_TICKETS_DATA':
+    case GET_TICKETS_DATA:
       return getRenderData(state, action.sort, action.filters);
     default:
       return state;

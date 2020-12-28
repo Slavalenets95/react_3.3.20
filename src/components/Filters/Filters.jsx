@@ -11,6 +11,7 @@ function Filters({ filters, actions }) {
     const { title, id, value, isChecked } = filter;
     return <Filter key={id} id={id} title={title} checked={isChecked} value={value} handleFilter={actions.handleFilter} />;
   });
+  
   return (
     <fieldset className={classes.filters__group}>
       <p className={classes['filters__group-title']}>Количество пересадок</p>

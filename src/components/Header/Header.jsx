@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Header.module.scss';
-import logo from './logo.svg';
+import logo from '../../images/logo.svg';
 
 function Header() {
   return (

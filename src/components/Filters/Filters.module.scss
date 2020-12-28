@@ -11,3 +11,17 @@
     margin: 0;
     font-size: 13px;
 }
+@media screen and (max-width: 600px) {
+    .filters__group{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .filters__group-title{
+        flex: 0 1 100%;
+        text-align: center;
+    }
+    .filters__group div{
+        flex: 0 1 50%;
+    }
+}

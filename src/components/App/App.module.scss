@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 .container{
   max-width: 960px;
   margin: 0 auto;
   background-color: #F3F7FA;
+  font-family: 'Open Sans', sans-serif;
 }
 .main{
   max-width: 774px;
@@ -10,10 +12,23 @@
 }
 .main__filters{
   max-width: 232px;
-  background-color: #fff;
   border-radius: 5px;
 }
 .main__ticket{
   margin-left: 20px;
   position: relative;
+}
+@media screen and (max-width: 600px) {
+  .main{
+    display: block;
+  }
+  .main__filters{
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+  }
+  .main__ticket{
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }

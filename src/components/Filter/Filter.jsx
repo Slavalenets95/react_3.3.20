@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import classes from './Filter.module.scss';
 
 
-function Filter({ title, id, value, checked, handleFilter }) {
+function Filter({ title, id, value, checked, handleFilter, filters }) {
   return (
     <div>
       <input
@@ -31,4 +32,6 @@ Filter.propTypes = {
   ]).isRequired
 };
 
-export default Filter;
+const mapStateToProps = ({ filters }) => ({ filters });
+
+export default connect(mapStateToProps)(Filter);

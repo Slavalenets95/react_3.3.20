@@ -17,7 +17,7 @@
 
 .check__input + .check::before {
     content: '';
-    background-image: url('./check-noactive.svg');
+    background-image: url('../../images/check-noactive.svg');
     background-size: 20px;
     display: inline-block;
     width: 20px;
@@ -27,6 +27,6 @@
 }
 
 .check__input:checked + .check::before {
-    background-image: url('./check-active.svg');
+    background-image: url('../../images/check-active.svg');
     background-size: 20px;
 }
